@@ -1,13 +1,90 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Quicksand&display=swap");
+body{
+  position: relative;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; 
+}
+
+.content { 
+  flex: 1; 
+}
+
+.navbar {
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  color: aliceblue;
+
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+  background-color:red ;
+}
+
+.slide-disp{
+  min-height: 100vh;
+  object-fit: cover;
+  bottom: 0%;
+}
+
+ .slide-disp img{
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
+.footer{
+  color: aliceblue;
+ background-color: rgb(238, 52, 20);
+ top: 0%;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  color: #f1356d;
+  text-align:center;
+  align-content: center;
+  border: 5 solid rgb(231, 5, 5);
+}
+/* Set the size of the div element that contains the map */
+.map {
+
+  top: 0%;
+  height: auto;
+  width: auto;
+  text-align: center;
+  float: none;
+bottom: 0%;
+position: sticky;
+    
+}
+.map1 {
+  height: 100vh;
+  width: auto;
+  text-align: center;
+  float: none;
+
+    
 }
